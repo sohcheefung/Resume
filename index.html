@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Online Resume</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="site-navbar">
+        <h1 class="title">My Resume</h1>
+        <img class="logo" src="profile_pic.png" alt="logo" ></img>
+        </div>
+        <hr/>
+        <div class="intro">
+        <h3 class="description">Online Resume Site</h3>
+        <p>I have a great interest and passion in software development especially when it comes to the programming, design, creativity and innovation.
+          Throughout the years of my studies, I have experience in developing few games and software applications and aiming to use my skills to contribute
+          to IT development at your company. </p>
+        </div>
+        <div class="nav">
+          <button id="about-btn" onclick='show("about")' class="nav-btn active">About</button>
+          <button id="contact-btn" onclick='show("contact")' class="nav-btn">Contact</button>
+        </div>
+      <div id="about" class="content shown">
+        <div class="column">
+          <h3>Personal Info</h3>
+          <div class="card">
+            <h4>Educations</h4>
+            <ul>
+              <li>Went to Universiti Utara Malaysia UUM 2018 - Present</li>
+              <li>Went to Politeknik Tuanku Syed Sirajuddin PTSS 2014 - 2017</li>
+              <li>Went to Sekolah Menengah Kebangsaan Perlis 2009 - 2013</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h4>Achievements</h4>
+            <ul>
+              <li>Sintok International Games and Gamification 2020 - Gold Medal Award</br>
+              Gold Medal Award in Recognition for Undergraduates Final Year Project <br/>
+              G-Ventures: A Green Awareness Mobile Educational Game</li>
+              <li>UUM Current CGPA 3.85<br/>
+              Dean List Award Semester 1 - 5 (Current)</li>
+              <li>PTSS Diploma CGPA 3.82 First Class Honours<br/>
+              Dean List Award Semester 1 - 6</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h4>Language</h4>
+            <ul>
+              <li>English</li>
+              <li>Malay</li>
+              <li>Chinese</li>
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <h3>Skills</h3>
+          <div class="card">
+            <h4>Technical Skills</h4>
+            <ul>
+              <p>Game Development</p>
+              <li>C# Scripting</li>
+              <li>ShaderLab</li>
+              <li>Unity</li>
+              <p>Web Development</p>
+              <li>HTML/CSS</li>
+              <li>JavaScript</li>
+              <li>MySql</li>
+              <li>Php</li>
+              <p>Android Development</p>
+              <li>Java</li>
+              <li>Firebase</li>
+              <li>Android Studio</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h4>Misc</h4>
+            <ul>
+              <li>Graphic Design</li>
+              <li>Video Editing</li>
+              <li>Drawing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="contact" class="content">
+        <div class="column">
+          <h3>Contact Details</h3>
+            <div class="card">
+              <h4>Email</h4>
+              <a href="mailto:sohcheefung@gmail.com">sohcheefung@gmail.com</a>
+              <h4>Phone No</h4>
+              <p>019-8546196</p>
+              <h4>Github</h4>
+              <a href="https://github.com/sohcheefung" target="_blank">Github</a>
+              <h4>Linkedin</h4>
+              <a href="https://www.linkedin.com/in/soh-chee-fung-artist123/" target="_blank">Linkedin</a>
+            </div>
+        </div>
+      </div>
+      </div>
+  </body>
+  <script>
+  function show(id){
+    let target = document.getElementById(id);
+    let active = document.getElementsByClassName("shown");
+    let targetBtn = document.getElementById(id+"-btn");
+    let activeBtn = document.getElementsByClassName("active")
+
+    active[0].classList.remove("shown");
+    activeBtn[0].classList.remove("active");
+    target.classList.add("shown");
+    target.classList.add("active");
+  }
+  </script>
+</html>
